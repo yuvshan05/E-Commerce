@@ -18,11 +18,56 @@
     display: flex;
     align-items: center;
     gap:50px;
-    list-style: none;
+    list-style: none;/*ye default marking jo hota hai ul or ol usko remove karne mein help karta hai*/
     color: #626262;
     font-size: 20px;
     font-weight: 500;
 }
 .nav-menu li{
     display: flex;
+    flex-direction: column;/* jab li mein text ke saath saath img sb v aa jayega phir ye kaam aayega simple text mein kaam nahi aayega*/
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;   
+}
+.nav-menu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background: #ff4141;
+}
+.nav-login-cart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.nav-login-cart button{
+    width: 150px;
+    height: 58px;
+    outline: none;
+    border: 1px solid #7a7a7a;
+    border-radius: 75px;
+    color: #515151;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    cursor: pointer;
+}
+.nav-login-cart button:active{ /*jab button ko click karenge to ye css property puri hogi*/
+    background:#f3f3f3;
+}
+.nav-cart-count{/*counter for cart list*/
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -35px;
+    margin-left: -55px;
+    border-radius: 14px;
+    font-size: 14px;
+    background: red;
+    color:white;
 }
